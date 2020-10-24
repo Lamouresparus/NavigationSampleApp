@@ -3,4 +3,6 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="move_to_next_fragment">Move To Next Fragment</string>
+    <string name="enter_length_in_cm">Enter length in cm</string>
+    <string name="convert_to_ft">Convert to ft</string>
 </resources>

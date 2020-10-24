@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
     <Button
-        android:layout_gravity="center"
         android:id="@+id/next_fragment_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/move_to_next_fragment" />
-</FrameLayout>
+        android:text="@string/convert_to_ft"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/length_in_cm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/enter_length_in_cm"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/next_fragment_button"
+        app:layout_constraintEnd_toEndOf="@+id/next_fragment_button"
+        app:layout_constraintStart_toStartOf="@+id/next_fragment_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
